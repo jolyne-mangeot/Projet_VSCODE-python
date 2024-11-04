@@ -49,24 +49,3 @@ for i in range(0, ((alphabet*5).index((alphabet*5)[-1])+1)*5):
 #while lettreindex<alphabet5.index(alphabet5[-1])+1*5:
 #    lettreindex+=1
 #    print(alphabet5[0:lettreindex])
-
-a = float(input("Longueur a : "))
-b = float(input("Longueur b : "))
-c = float(input("Longueur c : "))
-hypo = max(a,b,c)
-def puissance(nombre):
-    return nombre**2
-
-if hypo <= a+b+c-hypo:
-    print("OK C UN TRIANGLE")
-    if a==b==c:
-        print("C EQUILATEREALL")
-    elif round(puissance(hypo), 0) == round(puissance(a) + puissance(b) + puissance(c),0) - round(puissance(hypo),0) and (a==b or b==c or c==a):
-        print("jakpot")
-    elif round(puissance(hypo),0) == puissance(a) + puissance(b) + puissance(c) - puissance(hypo):
-        print("C RECTANGLE BRAVOOOOO")
-    elif a==b or b==c or c==a:
-        print("Triangle isocèle")
-    else: print("Triangle lambda")
-else: print("C'est pas un triangle tho")
-

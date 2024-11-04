@@ -1,25 +1,28 @@
 def rectangle(largeur, hauteur):
     if largeur >0 and hauteur >0:
-        print(f"|{"-"*(largeur-2)}|")
-    x = hauteur-2
-    if largeur >2:
-        while x >0:
-            print(f"|{" "*(largeur-2)}|")
-            x-=1
+        print("|" + "-"*(largeur-2) + "|")
+    
+    for x in range(hauteur-2):
+        print("|" + " "*(largeur-2) + "|")
+    
     if hauteur >1:
-        print(f"|{"-"*(largeur-2)}|")
+        print("|" + "-"*(largeur-2) + "|")
+
 
 def triangle(hauteur):
     if hauteur >0:
-        print(f"{" "*(hauteur-1)}/\{" "*(hauteur-1)}")
+        print(" "*(hauteur-1) + "/" + "\ ")
+    
     x = hauteur-2
     y = 2
     while x >0:
         print(f"{" "*(x)}/{" "*(y)}\ ")
         x-=1
         y+=2
+    
     if hauteur >1:
         print(f"/{"_"*((hauteur-1)*2)}\ ")
+
 
 def diagonale(ratio):
     ratio +=1
@@ -36,15 +39,15 @@ def diagonale(ratio):
         print(f"+{"-"*(ratio+1)}+")
 
 
-for i in range(0,5):
+for i in range(0,6):
     rectangle(i,i)
     print("")
 
-for i in range(0,5):
+for i in range(0,6):
     triangle(i)
     print("")
 
-for i in range(0,5):
+for i in range(0,6):
     diagonale(i)
     print("")
 
