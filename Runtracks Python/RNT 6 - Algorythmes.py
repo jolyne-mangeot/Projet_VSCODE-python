@@ -25,8 +25,8 @@ def triangle(hauteur):
 
 
 def diagonale(ratio):
-    ratio +=1
-    if ratio >0:
+
+    if ratio >=0:
         print(f"+{"-"*(ratio+1)}+")
     x = ratio
     y = 1
@@ -35,7 +35,7 @@ def diagonale(ratio):
         print(f"|{"#"*x}{" "*y}{"#"*z}|")
         x -=1
         z +=1
-    if ratio >0:
+    if ratio >=0:
         print(f"+{"-"*(ratio+1)}+")
 
 
