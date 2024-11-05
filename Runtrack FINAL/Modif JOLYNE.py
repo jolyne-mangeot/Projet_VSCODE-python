@@ -1,16 +1,24 @@
 
-
-    #cette liste définit / réinitialise la grille, générant 9 "coordinates" vierges
 board = [' ' for coordinates in range(9)]
+    #cette liste à répéter à chaque début de manche définit / réinitialise la grille, générant 9 "coordinates" vierges
+
 symbol = ['x','o','&','#','★','♥']
+    #cette liste établit les différents symboles pouvant être utilisés pour représenter le jeu de chaque joueur
+
 players = [' ', ' ']
-    #cette variable compte le nombre de tours écoulés depuis le début de la manche, permettant d'arrêter celle-ci lorsque les 9 tours sont écoulés
+    #cette liste énumère et désigne le ou les deux joueurs participants aux différentes manches
+
 turn = 0
+    #cette variable compte le nombre de tours écoulés depuis le début de la manche, permettant d'arrêter celle-ci lorsque les 9 tours sont écoulés
 
 
-def Display_rules():
+def Display_rules(y_n):
     #affiche ou non les règles du jeu, l'assignation des symboles et le système de manches
-    pass
+    if y_n in ('o', 'oui', 'Oui'):
+        print("Voici les règles")
+        return
+    else :
+        return
 
 
 def Choose_symbol(player):
@@ -55,13 +63,13 @@ def Check_win(Symbole):
     else:
         return False
 
-  
-    
 
 def Launch_game():
     #compile et initie l'intégralité des algorythmes composant le jeu, permettant la délimitation de manches
     print("le premier joueur choisit le symbole qui le représentera pendant la manche")
     print("Ce symbole doit être désigné à partir d'une liste qui suit :")
+    print(symbol)
+    print([x for x in range(symbol.index(symbol[-1])+1)])
     Choose_symbol(0)
 
     print(players)
