@@ -1,24 +1,26 @@
-
+#job1 et 2, lancer des comparaisons if: else: avec des arguments mathématiques et déclenchant toute réponse attendue
 variable_1 = "hihi"
 variable_2 = "haha"
 if variable_1 != variable_2:
-    print(f"{variable_1} !! {variable_2} !! MUAHAHA")
-else: print("...")
+    print(f"{variable_1} ! {variable_2} ! hihihaha")
+else: print("bon.")
 
 age = 19
 if age < 18:
-    print("no vote for yu")
+    print("no vote")
 else: print("woaw go vote")
 
+#job3 et 4, les conditions ajoutent une couche de possibilité mais aussi de complexité, motrant toutes les manières d'arriver à une même fin
+#   1
 for i in range(101):
     if i==26 or i==37 or i==88:
         print("")
     else: print(i)
-
+#   2
 for i in range(101):
     if i not in(26,37,88):
         print(i)
-
+#   3 qui, avec elif:, permet de dénombrer des conditions
 for i in range (1,101):
     if i%3==0 and i%5==0:
         print("cocacola")
