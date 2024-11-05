@@ -9,7 +9,7 @@ def display_board():
     print("-"*13)
     print(f"| {board[6]} | {board[7]} | {board[8]} |" )
     print(" "*13)
-
+print("")
 #Vérifie si il y'a un gagnant 
 def check_winner(player):
     win_conditions = [
