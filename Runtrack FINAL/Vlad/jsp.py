@@ -1,5 +1,6 @@
 # Afficher la grille "board"
 board = [' ' for _ in range(9)]
+Symbol = ['x','o','&','#','★','♥']
 
 def display_board():
     print(" "*13)
