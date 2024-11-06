@@ -11,10 +11,14 @@ players = [' ', ' ']
     #cette liste énumère et désigne le ou les deux joueurs participants aux
     # différentes manches
 
-turn = 0
+TURN = 0
     #cette variable compte le nombre de tours écoulés depuis le début de la
     # manche, permettant d'arrêter celle-ci lorsque les 9 tours sont écoulés
 
+SYMBOL_J1 = ''
+SYMBOL_J2 = ''
+SCORE_J1 = ''
+SCORE_J2 = ''
 
 def Display_rules(y_n):
     #affiche ou non les règles du jeu, l'assignation des symboles et le
@@ -90,31 +94,31 @@ def Check_win(Symbole):
         return False
 
 def Launch_round():
+    TURN +=1
     Reset_board()
     Display_board()
+    TRY_coor(input("Quelle case souhaitez-vous jouer ? (1 à 9) "))
     pass
 
-def Launch_game():
+
+
     #compile et initie l'intégralité des algorythmes composant le jeu,
     # permettant la délimitation de manches
-    Display_rules(input("Bienvenue au tic-tac-toe ! Voulez-vous visualiser\
- les règles avant de commencer ? o/n "))
-    print("Le premier joueur choisit le symbole qui le représentera\
- pendant la manche,")
-    print("Ce symbole doit être désigné à partir de la liste qui suit :")
-    Choose_symbol(0)
+Display_rules(input("Bienvenue au tic-tac-toe ! Voulez-vous visualiser les\
+ règles avant de commencer ? (affichage de la grille coordonnée) o/n "))
+print("Le premier joueur choisit le symbole qui le représentera pendant la\
+ manche,")
+print("Ce symbole doit être désigné à partir de la liste qui suit :")
+Choose_symbol(0)
+print("Le deuxième joueur choisit également son symbole conformément à la\
+ liste")
+Choose_symbol(1)
+print("Le joueur 1 jouera donc avec le symbole :", players[0],\
+ "et le joueur 2 :", players[1])
+SYMBOL_J1 = players[0]
+SYMBOL_J2 = players[1]
+Launch_round()
 
-    print(players)
 
-    print("Le deuxième joueur choisit également son symbole conformément à\
- la liste")
-    Choose_symbol(1)
-    print("Le joueur 1 jouera donc avec le symbole : " + players[0] + \
- " et le joueur 2 : " + players[1])
-    Launch_round()
+
     
-
-
-    
-
-Launch_game()
