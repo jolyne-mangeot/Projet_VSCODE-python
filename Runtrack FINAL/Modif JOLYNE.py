@@ -20,6 +20,7 @@ SYMBOL_J2 = ''
 SCORE_J1 = ''
 SCORE_J2 = ''
 
+
 def Display_rules(y_n):
     #affiche ou non les règles du jeu, l'assignation des symboles et le
     # système de manches
@@ -56,6 +57,7 @@ def Choose_symbol(player):
         else: 
             print("Insérez un nombre compris dans la sélection : ")
             continue
+
 
 def Reset_board():
     board[0:9] = [' ' for coordinates in range(1,10)]
