@@ -30,10 +30,14 @@ for i in range (1,101):
         print("cola")
     else: print(i)
 
+i = 1
+while i <=100:
+    for j in range(2,i):
+        if all(i%j!=0):
+           print(i)
+    i =+1
 
-for i in range (3,100):
-    if all(i%j!=0 for j in range(2,i)):
-        print(i)
+print([i for i in range(0,100) if all(i%j!=0 for j in range(2,i))])
 
 
 #nombre_pair = int(input("Quel nombre à tester ? (pair/impair) "))
