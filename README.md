@@ -9,5 +9,7 @@ Repository des codes réalisés en introduction au langage Python au sein du cur
 
 ---
 Code des Runtracks d'apprentissage: *Jolyne Mangeot*
+
 Code du Runtrack final : *Jolyne Mangeot*, [*Armelle Pouzioux*](https://github.com/armelle-pouzioux), [*Vladimir Gorbachev*](https://github.com/vladimir-gorbachev)
-    [Voir le projet](https://github.com/armelle-pouzioux/TicTacToe-Project)
+
+- [Voir le projet](https://github.com/armelle-pouzioux/TicTacToe-Project)
