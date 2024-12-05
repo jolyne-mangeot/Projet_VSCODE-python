@@ -12,4 +12,4 @@ Code des Runtracks d'apprentissage: *Jolyne Mangeot*
 
 Code du Runtrack final : *Jolyne Mangeot*, [*Armelle Pouzioux*](https://github.com/armelle-pouzioux), [*Vladimir Gorbachev*](https://github.com/vladimir-gorbachev)
 
-- [Voir le projet](https://github.com/armelle-pouzioux/TicTacToe-Project)
+- [Voir le projet final "Tic-tac-toe"](https://github.com/armelle-pouzioux/TicTacToe-Project)
